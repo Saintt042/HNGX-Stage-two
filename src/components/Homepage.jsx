@@ -13,7 +13,7 @@ const Homepage = ({ searchQuery, onSearchInputChange, onHandleSearch }) => {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    const apiKey = "f5b7789b44803ba38cab2d46277a47e6";
+    const apiKey = "dae42ea105aaad8d2419842ebb6c679e";
     const apiUrl = `https://api.themoviedb.org/3/discover/movie?api_key=${apiKey}&primary_release_year=2023&sort_by=vote_average.desc&vote_count.gte=1000`;
 
     axios
@@ -26,7 +26,6 @@ const Homepage = ({ searchQuery, onSearchInputChange, onHandleSearch }) => {
         setIsLoading(false);
         const errorMessage = error;
         setError(errorMessage);
-        console.error("Error fetching movie data:", error);
       });
   }, []);
 
