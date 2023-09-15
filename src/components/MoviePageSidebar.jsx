@@ -8,7 +8,7 @@ import { NavLink } from "react-router-dom";
 
 const MoviePageSidebar = ({ id }) => {
   return (
-    <div className="fixed">
+    <div className="absolute">
       <div className="overflow-hidden min-w-[226px] bg-white rounded-r-[45px] h-full border border-black border-opacity-30 md:flex flex-col gap-9 hidden ">
         <div className="p-5">
           <Logo color='black' />
@@ -52,7 +52,7 @@ const MoviePageSidebar = ({ id }) => {
             Upcoming
           </NavLink>
         </div>
-        <div className="w-[170px] p-4 pt-9 flex flex-col gap-2 bg-pink-50 transition-all hover:bg-pink-100 bg-opacity-40 rounded-[20px] border border-rose-700 border-opacity-70 mx-6">
+        <div className="w-[170px] p-4 pt-9 flex flex-col gap-2 bg-pink-50 transition-all hover:bg-pink-100 bg-opacity-40 rounded-[18px] border border-rose-700 border-opacity-70 mx-6">
           <div className="text-zinc-800 text-opacity-80 text-[15px] font-semibold">
             Play movie quizes
             <br />
